@@ -1,13 +1,13 @@
 <div class="container">
     <header class="header">
-      <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+      <h1 id="title" class="text-center">Ajude um Programador Júnior</h1>
       <p id="description" class="description text-center">
-        Thank you for taking the time to help us improve the platform
+        Esse formulário vai ser usado para dá dicas de evolução profissional ao Devs iniciantes 
       </p>
     </header>
     <form id="survey-form">
       <div class="form-group">
-        <label id="name-label" for="name">Name</label>
+        <label id="name-label" for="name">Nome</label>
         <input
           type="text"
           name="name"
@@ -30,7 +30,7 @@
       </div>
       <div class="form-group">
         <label id="number-label" for="number"
-          >Age<span class="clue">(optional)</span></label
+          >Idade<span class="clue">(se quiser)</span></label
         >
         <input
           type="number"
@@ -43,19 +43,18 @@
         />
       </div>
       <div class="form-group">
-        <p>Which option best describes your current role?</p>
+        <p>Você trabalha na área?</p>
         <select id="dropdown" name="role" class="form-control" required>
-          <option disabled selected value>Select current role</option>
-          <option value="student">Student</option>
-          <option value="job">Full Time Job</option>
-          <option value="learner">Full Time Learner</option>
-          <option value="preferNo">Prefer not to say</option>
-          <option value="other">Other</option>
-        </select>
+          <option disabled selected value>Selecione uma opção</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+          <option value="preferNo">Prefere não responder</option>
+                  </select>
       </div>
   
       <div class="form-group">
-        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <p>Se a resposta é SIM na questão anterior</p>
+        <p> Qual sua área? </p> 
         <label>
           <input
             name="user-recommend"
@@ -63,7 +62,7 @@
             type="radio"
             class="input-radio"
             checked
-          />Definitely</label
+          />Front-end</label
         >
         <label>
           <input
@@ -71,7 +70,7 @@
             value="maybe"
             type="radio"
             class="input-radio"
-          />Maybe</label
+          />Back-end</label
         >
   
         <label
@@ -80,27 +79,27 @@
             value="not-sure"
             type="radio"
             class="input-radio"
-          />Not sure</label
+          />Outros</label
         >
       </div>
   
       <div class="form-group">
         <p>
-          What is your favorite feature of freeCodeCamp?
+          O que é mais importante no inicio dá programação?
         </p>
         <select id="most-like" name="mostLike" class="form-control" required>
-          <option disabled selected value>Select an option</option>
-          <option value="challenges">Challenges</option>
-          <option value="projects">Projects</option>
-          <option value="community">Community</option>
-          <option value="openSource">Open Source</option>
+          <option disabled selected value>Selecione</option>
+          <option value="teoria">Teoria</option>
+          <option value="Pratica">Prática</option>
+          <option value="Net">Networking</option>
+          <option value="Doc">Documentação</option>
         </select>
       </div>
   
       <div class="form-group">
         <p>
-          What would you like to see improved?
-          <span class="clue">(Check all that apply)</span>
+          Por onde você indicaria uma devJr começar?
+          <span class="clue">(Escolha uma ou mais opções)</span>
         </p>
   
         <label
@@ -194,18 +193,18 @@
       </div>
   
       <div class="form-group">
-        <p>Any comments or suggestions?</p>
+        <p>Sugestões de melhoria</p>
         <textarea
           id="comments"
           class="input-textarea"
           name="comment"
-          placeholder="Enter your comment here..."
+          placeholder="Sugestões"
         ></textarea>
       </div>
   
       <div class="form-group">
         <button type="submit" id="submit" class="submit-button">
-          Submit
+          Enviar
         </button>
       </div>
     </form>
